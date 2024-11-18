@@ -1,0 +1,223 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1726613058321,
+      "tag": "0000_remarkable_mercury",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1727316203813,
+      "tag": "0001_wet_catseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1727812733732,
+      "tag": "0002_fast_frank_castle",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1727815645107,
+      "tag": "0003_wet_post",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1727816476491,
+      "tag": "0004_careful_killraven",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1727828231492,
+      "tag": "0005_graceful_stingray",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1727912191706,
+      "tag": "0006_petite_omega_flight",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1728414121985,
+      "tag": "0007_milky_vengeance",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1728414184748,
+      "tag": "0008_sturdy_squirrel_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1728414315177,
+      "tag": "0009_nifty_unus",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1728678246549,
+      "tag": "0010_sour_inhumans",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1728871232808,
+      "tag": "0011_nice_pride",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1728871535135,
+      "tag": "0012_clumsy_scream",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1728871581272,
+      "tag": "0013_free_ink",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1729700799318,
+      "tag": "0014_glossy_archangel",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1729893321842,
+      "tag": "0015_oval_celestials",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1729895305745,
+      "tag": "0016_clear_praxagora",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1729902054883,
+      "tag": "0017_far_wild_pack",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1729902111321,
+      "tag": "0018_red_plazm",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1730062724488,
+      "tag": "0019_sturdy_gateway",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1730234768131,
+      "tag": "0020_slow_ultron",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1730332692436,
+      "tag": "0021_overjoyed_senator_kelly",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1731543411140,
+      "tag": "0022_mean_hellion",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1731611099898,
+      "tag": "0023_outgoing_sinister_six",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1731622103043,
+      "tag": "0024_nappy_killer_shrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1731433031738,
+      "tag": "0022_wet_mariko_yashida",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1731435253151,
+      "tag": "0023_smart_viper",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1731436261910,
+      "tag": "0024_fearless_roland_deschain",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1731728455965,
+      "tag": "0025_broad_cyclops",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1731728707988,
+      "tag": "0026_wise_serpent_society",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1731728759437,
+      "tag": "0027_romantic_magik",
+      "breakpoints": true
+    }
+  ]
+}
