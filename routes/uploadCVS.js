@@ -162,6 +162,7 @@ router.post('', cpUpload, async (req, res) => {
             const ownedCollectable = [];
             const mappedCollectableImage = [];
 
+            console.log("parsedCsvJsonData: ", parsedCsvJsonData);
             let imageUrl = null
             for (const row of parsedCsvJsonData) {
                 const imageObject = urlCollectableImages.find(image => image.originalName === row.image);
@@ -190,6 +191,8 @@ router.post('', cpUpload, async (req, res) => {
                 //collectable_pic: ownedCollectableImage[j]
                 // The owned should only be used for the collectables table. 
                 for (const [key, value] of Object.entries(row)) {
+                    console.log("key: ", key);
+                    console.log("value: ", value);
                     if (key !== 'owned' && key !== 'image') {
                         collectableAttributesData.push({
                             collection_universe_id: collectionUniverseID,
@@ -232,6 +235,7 @@ router.post('', cpUpload, async (req, res) => {
                 }
             });
 
+            console.log("colletableAttributes: ", collectableAttributesData);
             await trx.insert(collectableAttributes).values(collectableAttributesData);
 
             await trx.insert(collectables).values(ownedCollectable);
@@ -329,6 +333,7 @@ try {
         });
     }
 
+    console.log("Parsed CSV Data:", JSON.stringify(parsedCsvJsonData, null, 2));
 
     await db.transaction(async (trx) => {
          
@@ -340,6 +345,15 @@ try {
 
         let imageUrl = null
         for (const row of parsedCsvJsonData) {
+            if (
+                !row || // Row is null or undefined
+                typeof row !== "object" || // Row is not an object
+                Object.keys(row).length <= 1 // Row only has one field (like `owned`)
+            ) {
+                console.log("Skipping row:", JSON.stringify(row));
+                continue; // Skip this row
+            }
+            
             const imageObject = urlCollectableImages.find(image => image.originalName === row.image);
             imageUrl = null
             if(imageObject)
@@ -355,7 +369,7 @@ try {
         }
 
         // After data is packaged insert data into universeCollectables table
-    
+        //parsedCsvJsonData.length
         const newUniverseCollectables = await trx
             .insert(universeCollectables)
             .values(universeCollectablesData)
