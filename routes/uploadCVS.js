@@ -141,6 +141,7 @@ router.post('', cpUpload, async (req, res) => {
             console.log("Finished udating source_universe value\n");
             console.log("Creating Collection");
             const customAttributes = [];
+            const hiddenAttributes = [];
 
             const newCollection = await trx.insert(collections).values({
                 name: universeCollectionName,
@@ -148,7 +149,8 @@ router.post('', cpUpload, async (req, res) => {
                 collection_universe_id: collectionUniverseID,
                 collection_pic: urlUniverseThumbnailImage,
                 custom_attributes: customAttributes,
-                favorite_attributes: favoriteAttributes
+                favorite_attributes: favoriteAttributes,
+                hidden_attributes: hiddenAttributes
             }).returning({ collection_id: collections.collection_id});
     
             
@@ -238,7 +240,8 @@ router.post('', cpUpload, async (req, res) => {
             console.log("colletableAttributes: ", collectableAttributesData);
             await trx.insert(collectableAttributes).values(collectableAttributesData);
 
-            await trx.insert(collectables).values(ownedCollectable);
+            if(ownedCollectable.length > 0)
+                await trx.insert(collectables).values(ownedCollectable);
 
             console.log("All data inserted succesfully");
             res.status(200).send({ message: 'Data inserted successfully' });
@@ -419,7 +422,9 @@ try {
 
         await trx.insert(collectableAttributes).values(collectableAttributesData);
 
-        await trx.insert(collectables).values(ownedCollectable);
+        if(ownedCollectable.length > 0)
+            await trx.insert(collectables).values(ownedCollectable);
+        
         console.log("Finished Creating attributes");
         console.log("All data inserted succesfully");
         res.status(200).send({ message: 'Data inserted successfully' });
